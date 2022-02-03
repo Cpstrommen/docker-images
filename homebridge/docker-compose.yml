@@ -1,0 +1,16 @@
+version: '2.1'
+services:
+  homebridge:
+    image: oznu/homebridge:latest
+    restart: always
+    network_mode: host
+    ports:
+      - "8581:8581"
+    environment:
+      - PGID=1000
+      - PUID=1000
+      - HOMEBRIDGE_CONFIG_UI=1
+      - HOMEBRIDGE_CONFIG_UI_PORT=8581
+      - TZ=America/Chicago
+    volumes:
+      - ./volumes/homebridge:/homebridge
