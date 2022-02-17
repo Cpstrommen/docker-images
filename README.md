@@ -8,4 +8,4 @@
 - PiHole (local DNS and adblocking server)
 
 ## Contribution Guidelines
-Submit pull requests divided by application and including each working `dockere-compose.yml` file. All submissions **must** be compatible with arm64 architectures for our Raspberry Pi and M1 chip friends. 
+Submit pull requests divided by application and including each working `docker-compose.yml` file. All submissions **must** be compatible with arm64 architectures for our Raspberry Pi and M1 chip friends. 
